@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 16px -3px hsl(221, 100%, 96%);
+  -webkit-box-shadow: 10px 10px 16px -3px hsl(221, 100%, 96%);
+  -moz-box-shadow: 10px 10px 16px -3px hsl(221, 100%, 96%);
+}
+.box {
+  padding: 2rem;
+}
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 40px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+}
+.left h4,
+.left .circle small,
+.left p {
+  color: hsl(241, 100%, 89%);
+}
+.left h3 {
+  font-size: 1.8rem;
+}
+.left .circle {
+  padding: 2rem 3rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.left .circle h2 {
+  font-size: 60px;
+}
+.left p {
+  width: 70%;
+}
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+}
+ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-weight: 800;
+}
+ul li p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-rounded {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+#reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+#memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+#verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+#visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+@media (max-width: 678px) {
+  .box {
+    padding: 1rem;
+  }
+}
+@media (max-width: 545px) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    gap: 20px;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+}
